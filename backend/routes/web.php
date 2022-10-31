@@ -12,8 +12,10 @@
 */
 
 
+//use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Auth;
 
-Route::group(['middleware' => ['install']], function () {	
+Route::group(['middleware' => ['install']], function () {
 
 	Route::get('/', 'WebsiteController@index');
 	Route::get('sign_up', 'WebsiteController@sign_up');
